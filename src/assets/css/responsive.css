@@ -1,0 +1,14 @@
+
+@media (max-width: 1440px) {
+ .banner-slice.container.position-relative img {
+    max-width: 650px;
+}
+.imagecard.holder-01 {
+    left: -99px;
+}
+.imagecard.holder-02 {
+    left: 47px;
+}
+
+}
+
