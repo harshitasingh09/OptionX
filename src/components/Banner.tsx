@@ -95,7 +95,7 @@ const Banner: React.FC = () => {
               <button className="btn btnCss-custom">Marketing</button>
               <button className="btn btnCss-custom">WordPress</button>
             </div>
-            <button className="btnSearch rounded-2 border-0"> Search</button>
+            <button className="btnSearch  border-0"> Search</button>
           </div>
         </div>
       </div>

@@ -1,3 +1,6 @@
+@media (min-width: 1600px) {
+    .features-links-holder{margin-left: 70px;}
+}
 
 @media (max-width: 1440px) {
  .banner-slice.container.position-relative img {

@@ -55,15 +55,28 @@ const ThemeSelection: React.FC<ThemeSelectionProps> = ({ title, description }) =
                 <div className="icons-axis">
                   <img src={footer} alt="" />
                 </div>
-                {[...Array(7)].map((_, i) => {
-                  const dataId = i + 1;
-                  const isFirst = i === 0;
-                  const imgSrc = i === 0 ? account : theme;
-                  const isVisible = visibleIndexes.includes(i);
+                <div
+                  className={`feature-icon-holder feature-icon-holder1 opened`}
+                  data-id={1}
+                >
+                  <div className="feature-title fade-in">
+                    <div className="img-icon">
+                      <img src={account} alt="" />
+                    </div>
+                    <div className="title-text">
+                      Select theme
+                      <p>Create ThemeForest account.</p>
+                    </div>
+                  </div>
+                </div>
+                {[...Array(6)].map((_, i) => {
+                  const dataId = i + 2;
+                  const imgSrc = theme;
+                  const isVisible = visibleIndexes.includes(i + 1);
                   return (
                     <div
                       key={dataId}
-                      className={`feature-icon-holder feature-icon-holder${dataId} ${isFirst ? 'opened' : ''}`}
+                      className={`feature-icon-holder feature-icon-holder${dataId}`}
                       data-id={dataId}
                     >
                       <div

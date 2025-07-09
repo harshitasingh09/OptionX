@@ -14,7 +14,7 @@ const ThemeWeek: React.FC = () => {
                     </p>
                 </div>
                 <div className="right-btn">
-                    <button className="btn btn-btnCss rounded-2 border-0"> View All Categories</button>
+                    <button className="btn btn-btnCss border-0"> View All Categories</button>
                 </div>
             </div>
 

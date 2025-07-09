@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --bs-primary: #DE030B;
+    --bs-primary: #DE030B !important;
     --white: #ffffff;
     --bg-white: #fff;
     --star-bg: #F2B603;
@@ -67,14 +67,15 @@ p {
     margin-right: 15px;
     padding: 13px 26px;
     z-index: 99;
+    border-radius: 5px;
 }
 
 /* top */
 
 button.btn.btnCss-custom {
-    border: 1px solid var(--bs-primary);
+    border: 1px solid #DE030B;
     border-radius: 5px;
-    color: var(--bs-primary);
+    color: #DE030B;
     font-weight: 400;
 }
 
@@ -217,7 +218,7 @@ a {
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 12px 0;
-    color: #e7e7e7;
+    color: #e7e7e7 !important;
     font-size: 14px;
     font-weight: 500;
     outline: none;
@@ -281,7 +282,7 @@ a {
 
 button.btn.btn-search {
     position: absolute;
-    background: var(--bs-primary);
+    background: #DE030B;
     top: 9px;
     right: 9px;
     color: #fff;
@@ -364,12 +365,11 @@ button.btn.btn-search {
     background: var(--bs-primary);
     top: 9px;
     right: 9px;
-
     color: #fff;
     margin-right: 15px;
     padding: 12px 34px;
-
     z-index: 99;
+    border-radius: 5px;
 }
 
 .newst_btn_center .btn.btnCss-custom {
@@ -725,7 +725,7 @@ button.btn.btn-search {
 }
 
 .btn-primary {
-    background: #FC7503;
+    background: #DE030B !important;
     border: 0;
     border-radius: 50px;
     padding: 10px 40px;
@@ -875,6 +875,7 @@ img.img-fluid.h-css {
     color: var(--bs-primary);
     font-weight: 200;
     font-size: 16px;
+    border-radius: 5px;
 }
 
 span.rating-rate {
@@ -1116,9 +1117,13 @@ span.rating-rate {
 }
 
 .feature-title {
-    display: flex;
+    display: flex !important;
     align-items: center;
    gap: 16px;
+}
+
+.feature-title.fade-in {
+    display: flex !important;
 }
 
 .features-links-holder .feature-icon-holder6 {
