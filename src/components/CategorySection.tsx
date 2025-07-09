@@ -8,7 +8,7 @@ interface CategorySectionProps {
 }
 
 const CategorySection: React.FC<CategorySectionProps> = ({
-  title,
+ 
   description,
   buttonText,
   children,
@@ -18,7 +18,8 @@ const CategorySection: React.FC<CategorySectionProps> = ({
       <div className="container">
         <div className="Category-heading d-flex justify-content-between">
           <div className="pt-3 pb-4 w-50">
-            <h2 className="fw-bold">{title}</h2>
+            {/* <h2 className="fw-bold">{title}</h2> */}
+            <h2 className="fw-bold">MBenefits of Using <span className="colorCode">OptionsX</span></h2>
             <p>{description}</p>
           </div>
           {buttonText && (

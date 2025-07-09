@@ -11,15 +11,13 @@ interface AboutSectionProps {
   children?: ReactNode;
 }
 
-const AboutSection: React.FC<AboutSectionProps> = ({ title, description, children }) => {
+const AboutSection: React.FC<AboutSectionProps> = ({  description, children }) => {
   return (
     <div className="container-fluid pt-5 pb-5">
       <div className="container">
         <div className="Category-heading d-flex justify-content-between">
           <div className="pt-3 pb-4 w-50">
-            <h2 className="fw-bold">
-              {title} <span className="colorCode"></span>
-            </h2>
+           <h2 className="fw-bold">Most Purchased <span className="colorCode">Category</span></h2>
             <p>{description}</p>
           </div>
           <div className="right-btn">{children}</div>
