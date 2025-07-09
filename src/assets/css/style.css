@@ -278,6 +278,7 @@ a {
 
 .search-content .form-control {
     height: 62px;
+    border-radius: 5px !important;
 }
 
 button.btn.btn-search {

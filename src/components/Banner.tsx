@@ -17,7 +17,7 @@ const Banner: React.FC = () => {
               <div className="input-group mb-3 w-80 position-relative">
                 <input
                   type="text"
-                  className="form-control rounded"
+                  className="form-control"
                   placeholder="e.g responsive CMS Theme"
                 />
                 <button className="btn btn-search">

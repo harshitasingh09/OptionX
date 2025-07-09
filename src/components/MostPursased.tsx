@@ -35,7 +35,7 @@ const MostPursased: React.FC = () => {
                                     <p>Member since April 2015</p>
                                 </div>
                                 <div className="viewprotfolio mt-4 mb-4">
-                                    <button className="btn btn-btnCss rounded-2 border-0"> View Portfolio</button>
+                                    <button className="btn btn-btnCss border-0"> View Portfolio</button>
                                 </div>
                                 <div className="reviewit mb-4 d-flex justify-content-center align-items-center ">
                                     Review: &nbsp;
