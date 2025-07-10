@@ -1,9 +1,11 @@
 import React from 'react';
 import bannerSlice from '../assets/img/banner_slice.png'
 import animation from '../assets/img/anim01.png'
+import animation2 from '../assets/img/anim02.png'
 import logo1 from '../assets/img/logo01.png'
 
 const Banner: React.FC = () => {
+
   return (
     <div className="optionX banner">
       <div className="container-fluid position-relative">
@@ -87,12 +89,12 @@ const Banner: React.FC = () => {
 
                     <div className="col-md-6">
                         <div className="frame-image ">
-                            <div className="imagecard holder-01">
+                            <div className="imagecard holder-01" >
                                 <img src={animation} />
                             </div>
 
-                            <div className="imagecard holder-02">
-                                <img src={animation} />
+                            <div className="imagecard holder-02" >
+                                <img src={animation2} />
                             </div>
                         </div>
                     </div>

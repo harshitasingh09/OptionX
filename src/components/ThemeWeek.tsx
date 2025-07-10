@@ -10,11 +10,11 @@ const ThemeWeek: React.FC = () => {
             <div className="Category-heading d-flex justify-content-between">
                 <div className="pt-3 pb-4 w-60">
                     <h2 className="fw-bold">Pick your Best <span className="colorCode"> Themes of the week</span></h2>
-                    <p>Where you can explore the themes that have captured the hearts of countless customers!
+                    <p>Every week, our staff personally hand-pick some of the best new website themes from our collection.
                     </p>
                 </div>
                 <div className="right-btn">
-                    <button className="btn btn-btnCss border-0"> View All Categories</button>
+                    <button className="btn btn-btnCss border-0"> View More Bestsellers</button>
                 </div>
             </div>
 
