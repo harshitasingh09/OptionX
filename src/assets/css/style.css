@@ -272,7 +272,7 @@ a {
 /* banner */
 
 .serch-theme-template {
-    width: 720px;
+    width: 780px;
     max-width: 950px;
 }
 
@@ -1236,8 +1236,8 @@ ul.footerSocial-icon li {
 
 .grapup {
     position: absolute;
-    right: 0;
-    bottom: 160px;
+    right: 46px;
+    bottom: 96px;
 }
 
 /* Fade in animation */
@@ -1336,3 +1336,4 @@ p.card-text {
     background-image: linear-gradient(266deg, #600D10, #871116, #600D10);
     padding: 45px;
 }
+

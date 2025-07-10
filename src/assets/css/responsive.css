@@ -6,17 +6,16 @@
   .w-60 {
     width: 60%;
 }
-.card-category .card {
-    max-width: 205px;
-    width: 220px;
-
-}
+ .card-category .card {
+        max-width: 202px;
+        width: 220px;
+    }
 }
 
 @media (max-width: 1440px) {
      .features-links-holder{margin-left:100x;}
     .card-category .card {
-           max-width: 205px;
+           max-width: 202px;
         width: 210px;
 
 }
@@ -38,9 +37,8 @@
 .blink {
     margin-left: 0em;
 }   
- .card-category .card {
-           max-width: 178px;
+.card-category .card {
+        max-width: 172px;
         width: 180px;
-
-}
+    }
 }

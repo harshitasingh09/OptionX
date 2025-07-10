@@ -86,8 +86,8 @@ const Banner: React.FC = () => {
                     </div>
 
                     <div className="col-md-6">
-                        <div className="frame-image">
-                            <div className="imagecard  holder-01">
+                        <div className="frame-image ">
+                            <div className="imagecard holder-01">
                                 <img src={animation} />
                             </div>
 
