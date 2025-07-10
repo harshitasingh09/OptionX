@@ -644,7 +644,7 @@ button.btn.btn-search {
     padding: 0;
     text-align: left;
     color: var(--bg-white);
-    font-weight: 100;
+    font-weight: 200;
     font-size: 16px;
     text-transform: capitalize;
     text-decoration: none;
@@ -1109,7 +1109,7 @@ span.rating-rate {
     /* top: 27px;
     left: 61rem;
     padding-top: 12px; */
-    bottom: 0px;
+    bottom: -40px;
     left: 36rem;
 }
 
@@ -1314,11 +1314,7 @@ p.card-text {
     left: -90px;
 }
 
-.grapup {
-    position: absolute;
-    right: -57px;
-    bottom: 96px;
-}
+
 
 .graphic-ocon.animationsCss {
     left: -60px;

@@ -328,7 +328,7 @@ const MostPursased: React.FC = () => {
                         </div>
                         <div className="subscrioptio-searc w-50 mx-auto">
                             <div className="input-group mb-3 w-80 position-relative">
-                                <input type="text" className="form-control rounded" placeholder="e.g responsive CMS Theme"/>
+                                <input type="text" className="form-control" placeholder="e.g responsive CMS Theme" style={{borderRadius:"5px"}}/>
                                 <button className="btn btn-search subscriptionCss">
                                     Subscribe</button>
                             </div>
