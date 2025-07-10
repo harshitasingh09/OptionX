@@ -1,10 +1,71 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import bannerSlice from '../assets/img/banner_slice.png'
 import animation from '../assets/img/anim01.png'
 import animation2 from '../assets/img/anim02.png'
 import logo1 from '../assets/img/logo01.png'
 
 const Banner: React.FC = () => {
+  const frameImageRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const titles = frameImageRef.current ? Array.from(frameImageRef.current.querySelectorAll('.imagecard')) as HTMLElement[] : [];
+    let index = 0;
+    let forward = true;
+    let timeoutId: ReturnType<typeof setTimeout>;
+
+    titles.forEach((el, i) => {
+      if (i === 0) {
+        el.style.opacity = '1';
+        el.style.display = 'block';
+      } else {
+        el.style.opacity = '0.5';
+        el.style.display = 'none';
+      }
+      el.style.transition = 'opacity 0.5s ease';
+    });
+
+    function animateTitles() {
+      if (forward) {
+        if (index < titles.length) {
+          const current = titles[index];
+          current.style.display = 'block';
+          current.style.opacity = '0.95';
+          setTimeout(() => {
+            current.style.opacity = '1';
+          }, 50);
+
+          index++;
+          timeoutId = setTimeout(animateTitles, 500);
+        } else {
+          forward = false;
+          index = titles.length - 1;
+          timeoutId = setTimeout(animateTitles, 500);
+        }
+      } else {
+        if (index >= 0) {
+          const current = titles[index];
+          current.style.opacity = '0.5';
+          setTimeout(() => {
+            current.style.display = 'none';
+            current.style.opacity = '0.95';
+          }, 500);
+
+          index--;
+          timeoutId = setTimeout(animateTitles, 500);
+        } else {
+          forward = true;
+          index = 0;
+          timeoutId = setTimeout(animateTitles, 500);
+        }
+      }
+    }
+
+    animateTitles();
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
 
   return (
     <div className="optionX banner">
@@ -88,7 +149,7 @@ const Banner: React.FC = () => {
                     </div>
 
                     <div className="col-md-6">
-                        <div className="frame-image ">
+                        <div className="frame-image " ref={frameImageRef}>
                             <div className="imagecard holder-01" >
                                 <img src={animation} />
                             </div>
