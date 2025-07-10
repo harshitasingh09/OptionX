@@ -8,14 +8,11 @@ const MostPursased: React.FC = () => {
          <div className="container-fluid pt-5 pb-5">
         <div className="container">
             <div className="Category-heading d-flex justify-content-between">
-                <div className="pt-3 pb-4 w-50">
-                    <h2 className="fw-bold">Most Purchased <span className="colorCode">Category</span></h2>
-                    <p>Where you can explore the themes that have captured the hearts of countless customers!
-                        This curated selection showcases the top-selling designs</p>
+                <div className="pt-3 pb-4 w-60">
+                    <h2 className="fw-bold">Feature   <span className="colorCode">Creator</span></h2>
+                    <p>Our themes and templates are produced by world-class creators</p>
                 </div>
-                <div className="right-btn">
-                    <button className="btn btn-btnCss border-0"> View All Categories</button>
-                </div>
+               
             </div>
 
             <div className="row">

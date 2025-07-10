@@ -1,8 +1,25 @@
-@media (min-width: 1600px) {
-    .features-links-holder{margin-left: 70px;}
+@media (max-width: 1600px) {
+    .features-links-holder{margin-left:70px;}
+    .blink {
+    margin-left: 5em;
+}
+  .w-60 {
+    width: 60%;
+}
+.card-category .card {
+    max-width: 205px;
+    width: 220px;
+
+}
 }
 
 @media (max-width: 1440px) {
+     .features-links-holder{margin-left:100x;}
+    .card-category .card {
+           max-width: 205px;
+        width: 210px;
+
+}
  .banner-slice.container.position-relative img {
     max-width: 650px;
 }
@@ -10,8 +27,20 @@
     left: -99px;
 }
 .imagecard.holder-02 {
-    left: 47px;
+    left: 50px;
 }
+.blink {
+    margin-left: 10em;
+}
+}
+@media (max-width: 1366px) {
+    .features-links-holder{margin-left:0px;}
+.blink {
+    margin-left: 0em;
+}   
+ .card-category .card {
+           max-width: 178px;
+        width: 180px;
 
 }
-
+}

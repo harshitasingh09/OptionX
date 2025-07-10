@@ -8,7 +8,7 @@ const ThemeWeek: React.FC = () => {
  <div className="container-fluid pt-5 pb-5">
         <div className="container">
             <div className="Category-heading d-flex justify-content-between">
-                <div className="pt-3 pb-4 w-50">
+                <div className="pt-3 pb-4 w-60">
                     <h2 className="fw-bold">Pick your Best <span className="colorCode"> Themes of the week</span></h2>
                     <p>Where you can explore the themes that have captured the hearts of countless customers!
                     </p>

@@ -72,17 +72,33 @@ const Banner: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="banner-slice container position-relative">
-          <img src={bannerSlice} className="mt-3" alt="" />
-          <div className="frame-image">
-            <div className="imagecard holder-01">
-              <img src={animation} alt="" />
+       <div className="banner-slice container position-relative">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="blink">
+                            <svg width="650" height="370">
+                              <image  x="0" y="-50"  width="100%"  height="500"  href={bannerSlice} />
+                                <animate attributeType="XML" repeatCount="indefinite" dur="2.9s" attributeName="class"
+                                    values="visibles;hides;"></animate>
+                            </svg>
+
+                        </div>
+                    </div>
+
+                    <div className="col-md-6">
+                        <div className="frame-image">
+                            <div className="imagecard  holder-01">
+                                <img src={animation} />
+                            </div>
+
+                            <div className="imagecard holder-02">
+                                <img src={animation} />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div className="imagecard holder-02">
-              <img src={animation} alt="" />
-            </div>
-          </div>
-        </div>
         <div className="w-70 mx-auto position-relative newst_btn_center">
           <div className="newest-btn">
             <div className="logof ms-3">

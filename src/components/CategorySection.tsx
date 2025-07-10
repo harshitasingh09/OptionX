@@ -1,5 +1,6 @@
 import React, { type ReactNode } from 'react';
 
+
 interface CategorySectionProps {
   title: string;
   description: string;
@@ -10,25 +11,36 @@ interface CategorySectionProps {
 const CategorySection: React.FC<CategorySectionProps> = ({
  
   description,
-  buttonText,
-  children,
+
 }) => {
   return (
     <div className="container-fluid pt-5 pb-5">
-      <div className="container">
+      <div className="container position-relative">
         <div className="Category-heading d-flex justify-content-between">
-          <div className="pt-3 pb-4 w-50">
+          <div className="pt-3 pb-4 w-60 flex-grow-1">
             {/* <h2 className="fw-bold">{title}</h2> */}
-            <h2 className="fw-bold">MBenefits of Using <span className="colorCode">OptionsX</span></h2>
+            <h2 className="fw-bold">Benefits of Using <span className="colorCode">OptionsX</span></h2>
             <p>{description}</p>
           </div>
-          {buttonText && (
-            <div className="right-btn">
-              <button className="btn btn-btnCss rounded-2 border-0">{buttonText}</button>
-            </div>
-          )}
+           <div className="right-btn">
+                    <svg width="40" height="40" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.7852 0.0795898L13.9824 7.55874L14.207 12.79L19.1484 16.0089L22.2637 32.1925L23.3184 29.8006L24.4707 8.86855L26.2969 8.95747L25.4082 25.0522L28.1719 18.7566L28.9727 9.1531L29.0605 7.55874L21.7852 0.0795898ZM35.3594 4.57633L30.8086 9.09085L30.4277 13.6347L31.4629 11.305L34.4316 10.0868C34.7441 8.25499 35.0469 6.41433 35.3594 4.57633ZM41.248 9.12642L32.8789 12.541L22.8594 35.2959L24.2852 42.703H25.0469L39.4609 16.6403L41.0918 17.3872L27.0879 42.703H29.4707L43.7871 16.7558L41.248 9.12642ZM8.02539 10.807L2.74121 19.6191L9.49023 42.703H18.6309L13.6406 18.2675L15.4277 17.9652L20.4863 42.703H22.4297L17.4785 16.9693L8.02539 10.807ZM43.0156 33.9621L36.5898 33.4997L31.7266 42.3207L38.543 39.0573L43.0156 33.9621ZM0.441406 31.4723L4.58887 42.7386H7.61523L4.87109 33.3663L0.441406 31.4723Z"
+                            fill="#078CD6" fill-opacity="0.3" />
+                    </svg>
+
+                </div>
+              
         </div>
-        <div className="row">{children}</div>
+           <div className="graphic-ocon">
+                <svg width="82" height="144" viewBox="0 0 82 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M46.3816 1C34.5967 31.0357 31.3231 95.0153 75.6257 83.0734C93.5214 77.6453 71.0427 59.6239 41.5804 62.6636C12.118 65.7034 -16.2532 96.9694 13.8639 143"
+                        stroke="#EA4335" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="8 8" />
+                </svg>
+
+            </div>
+        
 
           <div className="row">
                 <div className="col-lg-3">
@@ -50,7 +62,7 @@ const CategorySection: React.FC<CategorySectionProps> = ({
                                     fill="#DE030B" fill-opacity="0.75" />
                             </svg>
 
-                        </div>
+                        </div>                        
                         <h5 className="card-title pb-0 mb-1">Easy to use</h5>
                         <p className="card-text text-muted">Buy and sell creative assets with just a few clicks.</p>
                     </div>
