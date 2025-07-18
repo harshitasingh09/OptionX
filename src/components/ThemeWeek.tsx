@@ -18,7 +18,7 @@ const ThemeWeek: React.FC = () => {
                 </div>
                 <div className="right-btn wow"  data-wow-duration="2s" data-aos="fade-left">
                     <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new">
-                        <span> View All Categories</span></button>
+                        <span> View Best Seller</span></button>
 
                 </div>
             </div>

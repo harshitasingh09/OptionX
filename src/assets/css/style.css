@@ -240,7 +240,7 @@ a {
 
 .btn-primary,
 .btn-outline-primary:hover {
-    color: var(--bs-light);
+    color: var(--bs-light) !important;
 }
 
 .btn-secondary,
@@ -366,6 +366,11 @@ button.btn.btn-btnCss.rounded-2.border-0.three.butn.butn__new:hover {
 
 .search-content .form-control {
     height: 62px;
+}
+
+.form-control{
+    border-radius: 5px !important;
+
 }
 
 button.btn.btn-search {
@@ -756,11 +761,11 @@ button.btn.btn-search {
     color: var(--bs-primary);
 }
 
-.btn-primary.btn-dontate {
+/* .btn-primary.btn-dontate {
     border: 1px solid #FF7F00;
     background-color: #000;
     border-radius: 5px;
-}
+} */
 
 .navbar-brand {
     margin-right: 5rem;
@@ -809,7 +814,7 @@ button.btn.btn-search {
 }
 
 .btn-primary {
-    background: var(--bs-primary);
+    background: var(--bs-primary) !important;
     border: 0;
     border-radius: 50px;
     padding: 10px 40px;
@@ -933,6 +938,7 @@ img.img-fluid.h-css {
     overflow: hidden;
     margin: 6px;
     margin-top: 0px;
+    border-radius: 5px;
 }
 
 .card-title {
@@ -1104,9 +1110,6 @@ span.rating-rate {
     transition: all 0.3s ease 0s;
 }
 
-/* .features-links-holder .feature-icon-holder.opened {
-    background-color: #3481ec;
-} */
 
 .features-links-holder .feature-icon-holder.opened .animation-holder {
     opacity: 1;
@@ -1115,10 +1118,6 @@ span.rating-rate {
 .features-links-holder .feature-icon-holder.opened .animation-holder .special-gradiant {
     animation-name: little-move;
 }
-
-/* .features-links-holder .feature-icon-holder:hover, .features-links-holder .feature-icon-holder:focus {
-    background-color: #7384ab;
-} */
 
 .features-links-holder .feature-icon-holder .feature-icon {
     color: #ffffff;
@@ -1365,7 +1364,7 @@ ul.footerSocial-icon li {
 }
 
 .w-60 {
-    width: 67%;
+    width: 67% !important;
 }
 
 p.card-text {
@@ -1472,7 +1471,7 @@ p.card-text {
     background: var(--bs-primary);
     padding: 9px 10px;
     color: #fff !important;
-    border-radius: 4px;
+    border-radius: 4px !important;
 }
  .search-box.search-elem input[type="text"]:focus {
 	 border-bottom: solid 2px #00a896 !important;
