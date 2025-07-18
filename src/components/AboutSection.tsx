@@ -1,72 +1,86 @@
-import React, { type ReactNode } from 'react';
-import image1 from '../assets/img/01.png'
-import theme from '../assets/img/theme-img.png'
-import theme2 from '../assets/img/theme-img1.png'
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+
+import 'aos/dist/aos.css';
+import theme1 from '../assets/img/theme-img.png';
+import image1 from '../assets/img/01.png';
+import image2 from '../assets/img/02.png';
+import image3 from '../assets/img/03.png';
+import image4 from '../assets/img/04.png';
+import theme from '../assets/img/theme-img1.png';
 
 
-interface AboutSectionProps {
-  title: string;
-  description: string;
-  children?: ReactNode;
-}
 
-const AboutSection: React.FC<AboutSectionProps> = ({  description }) => {
+const AboutSection: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <div className="container-fluid pt-5 pb-5">
-      <div className="container">
-        <div className="Category-heading d-flex justify-content-between">
-          <div className="pt-3 pb-4 w-60">
-           <h2 className="fw-bold">Most Purchased <span className="colorCode">Category</span></h2>
-            <p>{description}</p>
-          </div>
-          <div className="right-btn">
-                    <button className="btn btn-btnCss  border-0"> View All Categories</button>
+    <>
+     <div className="container-fluid pt-5 pb-5">
+        <div className="container">
+            <div className="Category-heading d-flex justify-content-between">
+                <div className="pt-3 pb-4 w-60">
+                    <h2 className={`fw-bold wow aos-init animated `}  data-aos="fade-down" style={{visibility: "visible"}}>Most Purchased <span className="colorCode">Category</span></h2>
+                    <p className={`wow animate_animated `} data-wow-duration="2s" data-aos="fade-right">Where you can explore the themes that have captured the hearts of countless customers!
+                        This curated selection showcases the top-selling designs</p>
                 </div>
-        </div>
-          <div className="row">
+                <div className={`right-btn wow aos-init animated `}  data-wow-duration="2s" data-aos="fade-left">
+                    <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new">
+                        <span> View All Categories</span></button>
+
+                </div>
+            </div>
+
+            <div className="row">
                 <div className="col-lg-4">
                     <div className="row row-cols-2 card-category">
-                        <div className="card colorCodeCss border-0">
-                            <h5 className="text-light">Graphic Design</h5>
-                            <div className="graphic-image">
+                        <div className="card colorCodeCss border-0 wow boxShadwoCard aos-init animated" data-aos="zoom-in" data-wow-duration="1s">
+                            <h5 className="text-light wow" data-aos="fade-down" data-wow-duration="0.2s">Graphic Design</h5>
+                            <div className="graphic-image wow" data-aos="zoom-in" data-wow-duration="0.3s">
                                 <img src={image1} className="img-fluid" />
                             </div>
                         </div>
-                        <div className="card colorCodeCssTwo border-0">
-                            <h5 className="text-light">Graphic Design</h5>
-                            <div className="graphic-image">
-                                <img src={image1} className="img-fluid"/>
+                        <div className="card colorCodeCssTwo border-0 wow boxShadwoCard aos-init animated" data-aos="zoom-in" data-wow-duration="1s">
+                            <h5 className="text-light wow" data-aos="fade-down" data-wow-duration="0.2s">E-Commerce</h5>
+                            <div className="graphic-image wow" data-aos="zoom-in" data-wow-duration="0.3s">
+                                <img src={image2} className="img-fluid" />
                             </div>
                         </div>
 
-                        <div className="card colorCodeCssthree border-0">
-                            <h5 className="text-light">Graphic Design</h5>
-                            <div className="graphic-image">
-                                <img src={image1} className="img-fluid"/>
+                       <div className="card colorCodeCss border-0 wow boxShadwoCard aos-init animated" data-aos="zoom-in" data-wow-duration="1s">
+                            <h5 className="text-light wow" data-aos="zoom-in" data-wow-duration="0.2s">Graphic Design</h5>
+                            <div className="graphic-image wow" data-aos="zoom-in" data-wow-duration="0.3s">
+                                <img src={image3} className="img-fluid" />
                             </div>
                         </div>
-                        <div className="card colorCodeCssfour border-0">
-                            <h5 className="text-light">Graphic Design</h5>
-                            <div className="graphic-image">
-                                <img src={image1} className="img-fluid" />
+                        <div className="card colorCodeCssTwo border-0 wow boxShadwoCard" data-aos="zoom-in" data-wow-duration="1s">
+                            <h5 className="text-light wow" data-aos="fade-down" data-wow-duration="0.2s">E-Commerce</h5>
+                            <div className="graphic-image wow" data-aos="zoom-in" data-wow-duration="0.3s">
+                                <img src={image4} className="img-fluid" />
                             </div>
                         </div>
                     </div>
-                    <div className="text-center mt-3">
-                        <button className="btn btnCss-custom">Browse All Categories</button>
+                    <div className="text-center mt-3 btn-holder wow" data-aos="fade-up">
+                           <button className="custom-btn btn-3 w-60"><span>Browse All Categories</span></button>
+                       
                     </div>
                 </div>
 
 
 
-                <div className="col-lg-4">
-                    <div className="card shadow">
+                <div className="col-lg-4" data-aos="fade-up" data-wow-duration="2s"
+     data-aos-anchor-placement="top-bottom">
+                    <div className="card shadowCss">
                         <img src={theme} className="card-img-top p-1" alt="MAC Beauty Makeup" />
                         <div className="card-body text-left">
                             <h5 className="card-title pb-0 mb-0">MAC Beauty | Enhance Your Beauty With MAC Beauty Makeup.
                             </h5>
-                            <p className="card-text pt-0 mb-2">by ThemeFusion in Business
+                            <p className="card-text pt-0 mb-0">by ThemeFusion in Business
                             </p>
                             <div className="d-flex justify-content-between align-items-end">
                                 <div className="price-list">
@@ -102,20 +116,22 @@ const AboutSection: React.FC<AboutSectionProps> = ({  description }) => {
                                             fill="#101820" />
                                     </svg>
 
-                                    <Link to="#" className="btn btn-buy">Buy Now</Link>
+                                     <button className="custom-btn btn-3"><span>Buy Now</span></button>
+                                  
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="col-lg-4">
-                    <div className="card shadow">
-                        <img src={theme2} className="card-img-top p-1" alt="MAC Beauty Makeup" />
+                  <div className="col-lg-4" data-aos="fade-down" data-wow-duration="2s"
+     data-aos-anchor-placement="top-bottom">
+                    <div className="card shadowCss">
+                        <img src={theme1} className="card-img-top p-1" alt="MAC Beauty Makeup" />
                         <div className="card-body text-left">
                             <h5 className="card-title pb-0 mb-0">MAC Beauty | Enhance Your Beauty With MAC Beauty Makeup.
                             </h5>
-                            <p className="card-text pt-0 mb-2">by ThemeFusion in Business
+                            <p className="card-text pt-0 mb-0">by ThemeFusion in Business
                             </p>
                             <div className="d-flex justify-content-between align-items-end">
                                 <div className="price-list">
@@ -151,16 +167,18 @@ const AboutSection: React.FC<AboutSectionProps> = ({  description }) => {
                                             fill="#101820" />
                                     </svg>
 
-                                    <a href="#" className="btn btn-buy">Buy Now</a>
+                                     <button className="custom-btn btn-3"><span>Buy Now</span></button>
+                                  
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
     </div>
-  );
-};
+    </>
+  )
+}
 
-export default AboutSection;
+  export default AboutSection

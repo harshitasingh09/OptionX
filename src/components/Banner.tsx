@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import bannerSlice from '../assets/img/banner_slice.png'
 import animation from '../assets/img/anim01.png'
 import animation2 from '../assets/img/anim02.png'
-import logo1 from '../assets/img/logo01.png'
+// import logo1 from '../assets/img/logo01.png'
 
 const Banner: React.FC = () => {
   const frameImageRef = useRef<HTMLDivElement>(null);
@@ -73,7 +73,7 @@ const Banner: React.FC = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="serch-theme-template pt-5 text-center">
             <h2 className="fw-bold">
-              Professional <span className="colorCode">WordPress Themes,</span> Website{' '}
+              Professional <span className="colorCode bannerHeading">WordPress Themes,</span> Website{' '}
               <span className="d-block">Templates for any Project</span>
             </h2>
             <div className="search-content position-relative">
@@ -162,7 +162,7 @@ const Banner: React.FC = () => {
 
                 </div>
             </div>
-        <div className="w-70 mx-auto position-relative newst_btn_center">
+        {/* <div className="w-70 mx-auto position-relative newst_btn_center">
           <div className="newest-btn">
             <div className="logof ms-3">
               <img src={logo1} alt="" />
@@ -176,7 +176,7 @@ const Banner: React.FC = () => {
             </div>
             <button className="btnSearch  border-0"> Search</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -18,16 +18,8 @@ const LandingPage = () => {
       <Topbar />
       <Navbar />
       <Banner />
-      <AboutSection
-        title="Most Purchased Category"
-        description="Where you can explore the themes that have captured the hearts of countless customers! This curated selection showcases the top-selling designs"
-      >
-      </AboutSection>
-      {/* Additional AboutSections or CategorySections can be added here as needed */}
-      <CategorySection
-        title="MBenefits of Using OptionsX"
-        description="OptionsX offers a seamless platform empowering users with diverse creative resources and earning opportunities."
-      />
+      <AboutSection />     
+      <CategorySection />
       <ThemeWeek/>
       <ThemeSelection  title="How the Process" description="This week's best web themes & templates have arrived."/>
       <MostPursased/>

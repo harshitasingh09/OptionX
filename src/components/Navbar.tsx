@@ -1,8 +1,29 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
+import ScrollSearchBar from '../UI/ScrollSearchBar';
 
 const Navbar: React.FC = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
   return (
-    <div className="container-fluid bg-black">
+    <div className={`container-fluid bg-black ${isSticky ? "sticky" : ""}`} id="header">
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light p-lg-0">
           <button
@@ -46,6 +67,14 @@ const Navbar: React.FC = () => {
                 Download Theme
               </a>
             </div>
+            <div id="sea" className={isSticky ? "stickya" : ""}>
+              <button className="search-btn" onClick={() => setShowSearch(true) }>
+                <i className="fa fa-search"></i>
+                </button>
+            </div>
+            {
+              showSearch && <ScrollSearchBar onClose={() => setShowSearch(false)} />
+            }
           </div>
         </nav>
       </div>
@@ -54,4 +83,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-             

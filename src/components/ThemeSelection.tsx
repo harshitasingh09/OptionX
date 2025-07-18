@@ -42,10 +42,10 @@ const ThemeSelection: React.FC<ThemeSelectionProps> = ({ title, description }) =
         <div className="container position-relative">
           <div className="Category-heading d-flex justify-content-between">
             <div className="pt-3 pb-4 w-60 position-relative">
-              <h2 className="fw-bold">
+              <h2 className="fw-bold wow"  data-aos="fade-down">
                 {title} <span className="colorCode"> Theme Selection</span>
               </h2>
-              <p>{description}</p>
+             <p className="wow animate_animated aos-init animated aos-animate" data-wow-duration="2s" data-aos="fade-right" style={{visibility: "visible" ,animationDuration: "2s"}}>{description}</p>
             </div>
            
           </div>
