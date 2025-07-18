@@ -920,7 +920,7 @@ img.img-fluid.h-css {
 }
 
 .card-category .card {
-    max-width: 205px;
+    max-width: 172px;
     overflow: hidden;
     margin: 6px;
     margin-top: 0px;
@@ -1199,7 +1199,7 @@ span.rating-rate {
 }
 
 .feature-title {
-    display: flex;
+    display: flex !important;
     align-items: center;
     gap: 16px;
 }
@@ -1335,7 +1335,7 @@ ul.footerSocial-icon li {
 }
 .grapup {
     position: absolute;
-    right: -57px;
+    right: 46px;
     bottom: 96px;
 }
 
@@ -1710,5 +1710,23 @@ background: linear-gradient(90deg, rgb(173, 39, 50) 0%, rgb(251, 2, 23) 100%);
 
     border: 1px solid var(--bs-primary);
     background-color: white;
+}
+
+
+
+/* Fade In and Fade Out Styles */
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+  transition: opacity 0.5s ease-in, visibility 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+  pointer-events: none;
 }
 
