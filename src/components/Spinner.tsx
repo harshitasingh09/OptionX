@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
-const Spinner: React.FC = () => {
+interface SpinnerProps {
+  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+
+const Spinner: React.FC <SpinnerProps>= ({setLoader}) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
+      setLoader(false);
     }, 2000);
     return () => clearTimeout(timer);
   }, []);

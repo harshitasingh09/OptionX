@@ -70,7 +70,7 @@ h1,
     visibility: visible;
     opacity: 1;
 }
-.spinner-grow{background-color: var(--bs-primary);}
+.spinner-grow{background-color: var(--bs-primary) !important;}
 
 
 #header.sticky {

@@ -11,10 +11,14 @@ import Copyright from '../components/Copyright';
 import BackToTop from '../components/BackToTop';
 import ThemeWeek from '../components/ThemeWeek';
 import MostPursased from '../components/MostPursased';
+import { useState } from 'react';
+import Spinner from '../components/Spinner';
 
 const LandingPage = () => {
+  const [loader, setLoader] = useState <boolean>(true);
   return (
     <>
+  {loader && <Spinner setLoader={setLoader} />}
       <Topbar />
       <Navbar />
       <Banner />
