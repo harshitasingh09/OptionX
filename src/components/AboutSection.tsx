@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-      once: true,
+    //   once: true,
     });
   }, []);
 
