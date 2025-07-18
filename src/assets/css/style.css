@@ -1692,6 +1692,7 @@ background: linear-gradient(90deg, rgb(173, 39, 50) 0%, rgb(251, 2, 23) 100%);
 .card.shadowCss {
     box-shadow: 0 5px 25px rgba(134, 133, 133, 0.4);
     overflow: hidden;
+    border-radius: 5px;
 }
 .card.shadowCss:hover {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
@@ -1699,8 +1700,7 @@ background: linear-gradient(90deg, rgb(173, 39, 50) 0%, rgb(251, 2, 23) 100%);
 
 .card.shadowCss:hover img {
   transform: scale(1.1);
-
-
+   border-radius: 5px;
 }
 
 .card.shadowCss img {
