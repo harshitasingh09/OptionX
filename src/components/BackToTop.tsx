@@ -13,7 +13,6 @@ const [isVisible, setIsVisible] = useState(false);
     };
 
     window.addEventListener('scroll', toggleVisibility);
-
     // Check visibility on mount
     toggleVisibility();
 

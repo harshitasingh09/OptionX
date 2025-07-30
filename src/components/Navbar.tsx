@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ScrollSearchBar from '../UI/ScrollSearchBar';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -21,8 +21,6 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
-
-
   return (
     <div>
     <div className={`container-fluid bg-black ${isSticky ? "sticky" : ""}`} id="header">
@@ -38,9 +36,9 @@ const Navbar: React.FC = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav">
-              <a href="index.html" className="nav-item nav-link active">
+              <NavLink to="/all-items" className="nav-item nav-link active">
                 All Item
-              </a>
+              </NavLink>
               <a href="#" className="nav-item nav-link">
                 WordPress
               </a>

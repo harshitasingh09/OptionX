@@ -4,8 +4,8 @@ import theme1 from '../assets/img/theme-img1.png';
 import profile from '../assets/img/profile.png'; 
 const MostPursased: React.FC = () => {
     return (
-        <>
- <div className="container-fluid pt-5 pb-5">
+  <>
+    <div className="container-fluid pt-5 pb-5">
         <div className="container">
             <div className="Category-heading d-flex justify-content-between">
                 <div className="pt-3 pb-4 w-50">
@@ -66,7 +66,8 @@ const MostPursased: React.FC = () => {
                                                         d="M23.0276 1.4462C22.3773 0.978195 20.5653 0.356445 12.9731 0.356445C4.83706 0.356445 3.62956 1.07045 3.24181 1.30445C1.18006 2.54345 0.984309 8.0267 0.966309 9.1382C0.991059 10.6067 1.22806 15.4929 3.24031 16.7012C3.62656 16.9344 4.82731 17.6439 12.9723 17.6439C20.5698 17.6439 22.3796 17.0252 23.0268 16.5587C24.7841 15.2942 24.9858 10.9412 24.9911 9.1187C24.9866 7.6532 24.8336 2.7467 23.0276 1.4462ZM22.1516 15.3422C21.8898 15.5304 20.3891 16.1439 12.9723 16.1439C5.80231 16.1439 4.29781 15.5874 4.01356 15.4157C3.28981 14.9814 2.52556 12.6767 2.46631 9.1337C2.52556 5.59895 3.29956 3.01895 4.01581 2.5892C4.30081 2.41745 5.81056 1.85645 12.9731 1.85645C20.3838 1.85645 21.8883 2.47445 22.1523 2.66345C22.7951 3.1262 23.4821 5.5622 23.4926 9.1232C23.4821 12.7404 22.7906 14.8817 22.1523 15.3414L22.1516 15.3422ZM17.8638 8.40995L11.1153 4.26845C10.8836 4.1282 10.5941 4.1252 10.3593 4.25795C10.1231 4.39145 9.97756 4.6412 9.97756 4.9112V13.1949C9.97756 13.4649 10.1231 13.7154 10.3593 13.8482C10.4733 13.9127 10.6008 13.9449 10.7276 13.9449C10.8611 13.9449 10.9961 13.9089 11.1146 13.8377L17.8631 9.6947C18.0881 9.55895 18.2253 9.3152 18.2253 9.0527C18.2253 8.7902 18.0888 8.5457 17.8638 8.40995ZM11.4783 11.8667V6.23945L16.0256 9.0527L11.4783 11.8667Z"
                                                         fill="black" />
                                                 </svg>
-                                            </a> </li>
+                                            </a> 
+                                            </li>
 
                                         <li><a href="#"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -81,28 +82,21 @@ const MostPursased: React.FC = () => {
                                             </a> </li>
 
 
-                                        <li><a href="#"> <svg width="13" height="24" viewBox="0 0 13 24" fill="none"
+                                        <li>
+                                            <a href="#"> <svg width="13" height="24" viewBox="0 0 13 24" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path
                                                         d="M7.64647 1.88721C7.73572 1.88721 7.78672 1.89096 7.78672 1.89096H9.74497L9.73447 4.14096H7.78897C6.71872 4.14096 6.74272 5.05521 6.74272 5.05521V8.62221H10.531L10.0022 10.8692H6.72997V22.114H4.48222L4.48072 10.8692H1.49422L1.48822 8.62221H4.48147V5.12571C4.48222 2.07696 7.01422 1.88721 7.64422 1.88721H7.64647ZM7.64647 0.387207C7.10722 0.387207 6.05347 0.476457 5.05522 1.07796C4.11022 1.64646 2.98447 2.81121 2.98447 5.12496V7.12146H1.49122C1.09297 7.12146 0.710471 7.28046 0.428471 7.56246C0.147221 7.84521 -0.0102784 8.22696 -0.00877845 8.62671L-0.00277852 10.8737C0.000221478 11.6995 0.671471 12.3685 1.49722 12.3685H2.98372L2.98522 22.1132C2.98522 22.942 3.65722 23.6132 4.48522 23.6132H6.73297C7.56172 23.6132 8.23297 22.942 8.23297 22.1132V12.3685H10.0052C10.6705 12.3685 11.257 11.9297 11.4445 11.2907L11.9732 9.04371C12.106 8.59071 12.0175 8.10021 11.734 7.72296C11.4512 7.34421 11.0057 7.12146 10.5332 7.12146H8.24497V5.64171L9.73597 5.64096C10.5617 5.64096 11.2322 4.97421 11.236 4.14771L11.2465 1.97421C11.248 1.94646 11.2487 1.91946 11.2487 1.89096C11.2487 1.06221 10.579 0.390957 9.75022 0.390957H7.82947C7.78597 0.388707 7.72447 0.387207 7.64647 0.387207Z"
                                                         fill="black" />
                                                 </svg>
 
-                                            </a> </li>
+                                            </a> 
+                                             </li>
                                     </ul>
                                 </div>
-
                             </div>
-
                         </div>
-
-
-
-
                     </div>
-
-
-
                 </div>
 
 
@@ -146,8 +140,7 @@ const MostPursased: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
-                       <div className="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-wow-duration="2s" data-aos-anchor-placement="top-bottom">
+     <div className="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-wow-duration="2s" data-aos-anchor-placement="top-bottom">
                     <div className="card shadowCss">
                         <img src={theme1} className="card-img-top p-1" alt="MAC Beauty Makeup" />
                         <div className="card-body text-left">
@@ -185,7 +178,6 @@ const MostPursased: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
 
                   <div className="col-lg-6 aos-init aos-animate mt-4" data-aos="fade-up" data-wow-duration="2s" data-aos-anchor-placement="top-bottom">
                     <div className="card shadowCss">
@@ -265,17 +257,11 @@ const MostPursased: React.FC = () => {
                         </div>
                     </div>
                 </div>
-
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
-
-
-
 
    <div className="donaegernate">
         <div className="container-fluid pt-0 pb-2">
@@ -293,11 +279,9 @@ const MostPursased: React.FC = () => {
                                     Subscribe</button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
         </>
