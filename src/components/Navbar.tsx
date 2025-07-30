@@ -39,9 +39,9 @@ const Navbar: React.FC = () => {
               <NavLink to="/all-items" className="nav-item nav-link active">
                 All Item
               </NavLink>
-              <a href="#" className="nav-item nav-link">
+              <NavLink to="/wordpress" className="nav-item nav-link">
                 WordPress
-              </a>
+              </NavLink>
               <a href="#" className="nav-item nav-link">
                 E commerce
               </a>

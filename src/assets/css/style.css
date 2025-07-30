@@ -390,7 +390,7 @@ button.btn.btn-btnCss.rounded-2.border-0.three.butn.butn__new:hover {
 }
 
 button.btn.btn-search {
-    position: absolute;
+    position: absolute !important;
     background: var(--gradient-color);
     top: 9px;
     right: 9px;
@@ -1823,24 +1823,24 @@ a.beuget-btn {
 /* wordpress */
 
 .topsearach {
-    height: 50px;
-    width: 350px;
-    max-width: 350px;
-    border: 0;
-    box-shadow: 1px 4px 5px #dddddd2b;
-    font-size: 14px;
+    height: 50px !important;
+    width: 350px !important;
+    max-width: 350px !important;
+    border: 0 !important;
+    box-shadow: 1px 4px 5px #dddddd2b !important;
+    font-size: 14px !important;
 }
 
 
 
 button.btn.btn-search.seamlessbtn i {
-    margin: 0;
-    padding: 4px;
+    margin: 0 !important;
+    padding: 4px !important;
 }
 
 button.btn.btn-search.seamlessbtn {
     top: 4px;
-    right: 6px;
+    right: 6px !important;
     border: 0;
     text-align: center;
 }

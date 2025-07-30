@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './Pages/LandingPage';
 import AllItem from './components/AllItem';
 import MainPageLayout from './Layouts/MainPageLayout';
+import WordPress from './Pages/WordPress';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route element={<MainPageLayout />}>
           <Route index element={<LandingPage />} />
           <Route path="all-items" element={<AllItem />} />
+          <Route path="wordpress" element={<WordPress/>} />
         </Route>
       </Routes>
     </Router>
