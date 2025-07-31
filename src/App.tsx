@@ -9,6 +9,7 @@ import LandingPage from './Pages/LandingPage';
 import AllItem from './components/AllItem';
 import MainPageLayout from './Layouts/MainPageLayout';
 import WordPress from './Pages/WordPress';
+import AddCart from './components/AddCart';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path="all-items" element={<AllItem />} />
           <Route path="wordpress" element={<WordPress/>} />
+          <Route path="add-cart" element={<AddCart/>} />
         </Route>
       </Routes>
     </Router>

@@ -1,10 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 interface ThemeCardProps {
     image: string;
 }
 
 const ThemeCard: React.FC<ThemeCardProps> = ({ image }) => {
+const navigate = useNavigate();
+
     return (
         <>
             <div className="card shadowCss">
@@ -47,7 +50,7 @@ const ThemeCard: React.FC<ThemeCardProps> = ({ image }) => {
                                     d="M22.4922 24.5H16.4922C16.227 24.5 15.9726 24.3946 15.7851 24.2071C15.5975 24.0196 15.4922 23.7652 15.4922 23.5C15.4922 23.2348 15.5975 22.9804 15.7851 22.7929C15.9726 22.6054 16.227 22.5 16.4922 22.5H22.4922C22.7574 22.5 23.0118 22.6054 23.1993 22.7929C23.3868 22.9804 23.4922 23.2348 23.4922 23.5C23.4922 23.7652 23.3868 24.0196 23.1993 24.2071C23.0118 24.3946 22.7574 24.5 22.4922 24.5Z"
                                     fill="#101820" />
                             </svg>
-                            <button className="custom-btn btn-3"><span>Buy Now</span></button>
+                            <button className="custom-btn btn-3" onClick={()=>navigate("/add-cart")}><span>Buy Now</span></button>
                         </div>
                     </div>
                 </div>
