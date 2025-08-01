@@ -1,11 +1,13 @@
 import Aos from 'aos';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import theme from '../assets/img/theme-img.png';
 import theme1 from '../assets/img/theme-img1.png';
 import ThemeCard from '../UI/ThemeCard';
 import { Link } from 'react-router-dom';
 
 const WordPress: React.FC = () => {
+
+    const [isShowMore, setIsShowMore]=useState(false)
 
     useEffect(() => {
         Aos.init({
@@ -46,7 +48,7 @@ const WordPress: React.FC = () => {
                         <div className="row">
                             <div className="category-categories contanet_wrapper " id="categoryWrapper">
                                 <h4 className="heading-title">WordPress categories</h4>
-                                <div className="data-toggler-target" id="toggle-target">
+                                <div className={`data-toggler-target ${isShowMore?"category-wrappers":""}`} id="toggle-target">
                                     <a className="category-categories_action" href="">
                                         <span className="category-categories_link">Site Templates <span className="category-icon">
                                             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -91,7 +93,7 @@ const WordPress: React.FC = () => {
                                         <span className="category-categories_link">  Site Templates </span>
                                     </a>
                                 </div>
-                                <button className="buttons-id" id="showMore"> Show more <span className="category-arrow ps-2">
+                                <button className={`buttons-id ${isShowMore? "category-arrow":""}`} id="showMore" onClick={()=>setIsShowMore(!isShowMore)}> Show more <span className="category-arrow ps-2">
                                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M6.06084 7.39326L0.403835 1.73627L1.81783 0.322265L6.76784 5.27227L11.7178 0.322266L13.1318 1.73627L7.47484 7.39327C7.28731 7.58074 7.033 7.68605 6.76784 7.68605C6.50267 7.68605 6.24836 7.58074 6.06084 7.39326Z" fill="#666" />
                                     </svg>

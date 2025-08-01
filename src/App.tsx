@@ -10,6 +10,7 @@ import AllItem from './components/AllItem';
 import MainPageLayout from './Layouts/MainPageLayout';
 import WordPress from './Pages/WordPress';
 import AddCart from './components/AddCart';
+// import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="all-items" element={<AllItem />} />
           <Route path="wordpress" element={<WordPress/>} />
           <Route path="add-cart" element={<AddCart/>} />
+          {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
       </Routes>
     </Router>

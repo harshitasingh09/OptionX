@@ -173,7 +173,7 @@ const [isOpen, setIsOpen] = useState(false);
       </div>
 
       {
-        isOpen && <AddToCartPopup/>
+        isOpen && <AddToCartPopup show={isOpen} onClose={() => setIsOpen(false)} />
       }
     </>
   )
