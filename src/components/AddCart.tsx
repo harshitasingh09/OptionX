@@ -1,10 +1,11 @@
 import Aos from 'aos';
 import React, { useEffect, useState } from 'react'
 import AddToCartPopup from '../UI/AddToCartPopup';
+import { Link } from 'react-router-dom';
 
 const AddCart: React.FC = () => {
 
-const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     Aos.init({
@@ -14,6 +15,15 @@ const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
+
+      <div className="container">
+        <div className="beuget mt-2">
+          <Link to="/" className="beuget-btn">Home</Link>
+          <i className="fa fa-circle"></i> File
+          <i className="fa fa-circle"></i> Sites Tamplet
+        
+        </div>
+      </div>
       <div className="container-fluid pt-2 pb-5">
         <div className="container">
           <div className="row">
@@ -38,7 +48,7 @@ const [isOpen, setIsOpen] = useState(false);
                 <div className="accodient-inner-detail mt-4">
                   <ul className="nav nav-tabs" id="myTab" role="tablist">
                     <li className="nav-item" role="presentation">
-                      <button className="nav-link active btn btn-btnCss rounded-2 border-0 three butn butn__new" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Screenshort</button>
+                      <button className="nav-link active btn btn-btnCss rounded-2 border-0 three butn butn__new" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Screenshot</button>
                     </li>
                     <li className="nav-item" role="presentation">
                       <button className="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Description</button>
@@ -102,7 +112,7 @@ const [isOpen, setIsOpen] = useState(false);
                 <hr />
 
                 <div className="add-cart-btn text-center">
-                  <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new w-100" onClick={()=>setIsOpen(true)} >
+                  <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new w-100" onClick={() => setIsOpen(true)} >
                     <span>  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M7.39649 13.7054C7.21723 13.709 7.04237 13.6497 6.90235 13.5377C6.76234 13.4257 6.66604 13.2681 6.63022 13.0924L4.83713 4.05799C4.73269 3.53734 4.45123 3.06889 4.04054 2.73225C3.62986 2.3956 3.1153 2.21151 2.58427 2.21127H1.26628C1.06305 2.21127 0.868142 2.13053 0.724437 1.98683C0.580733 1.84312 0.5 1.64822 0.5 1.44499C0.5 1.24176 0.580733 1.04685 0.724437 0.903148C0.868142 0.759444 1.06305 0.678711 1.26628 0.678711H2.58427C3.46753 0.678531 4.32371 0.983523 5.00793 1.54207C5.69215 2.10062 6.16238 2.87841 6.33903 3.74382L8.16277 12.7859C8.18503 12.8867 8.18671 12.9909 8.16769 13.0923C8.14867 13.1938 8.10936 13.2903 8.05211 13.3762C7.99486 13.4621 7.92085 13.5355 7.83453 13.5921C7.7482 13.6487 7.65134 13.6872 7.54975 13.7054H7.39649Z" fill="white" />
                       <path d="M8.16298 19.0693H6.7377C5.92498 19.0643 5.1452 18.7475 4.55919 18.1844C3.97319 17.6212 3.62567 16.8547 3.58832 16.0428C3.55097 15.2309 3.82663 14.4357 4.35846 13.8211C4.89028 13.2065 5.63769 12.8195 6.44652 12.7399L20.5537 11.4602L21.7874 5.27633H5.86415C5.66092 5.27633 5.46601 5.1956 5.32231 5.05189C5.1786 4.90819 5.09787 4.71328 5.09787 4.51005C5.09787 4.30682 5.1786 4.11192 5.32231 3.96821C5.46601 3.82451 5.66092 3.74377 5.86415 3.74377H22.7222C22.8354 3.74452 22.947 3.77034 23.0491 3.81936C23.1511 3.86838 23.241 3.93939 23.3123 4.0273C23.3872 4.11348 23.4419 4.21531 23.4724 4.32536C23.5029 4.4354 23.5084 4.55086 23.4885 4.66331L21.956 12.3261C21.9236 12.4881 21.8397 12.6354 21.7168 12.7459C21.5939 12.8563 21.4386 12.9241 21.274 12.9391L6.58445 14.2724C6.15157 14.2927 5.74449 14.4842 5.45277 14.8047C5.16105 15.1251 5.00858 15.5483 5.0289 15.9812C5.04923 16.4141 5.24068 16.8212 5.56114 17.1129C5.8816 17.4046 6.30482 17.5571 6.7377 17.5368H8.16298C8.36621 17.5368 8.56111 17.6175 8.70482 17.7612C8.84852 17.9049 8.92925 18.0998 8.92925 18.303C8.92925 18.5063 8.84852 18.7012 8.70482 18.8449C8.56111 18.9886 8.36621 19.0693 8.16298 19.0693Z" fill="white" />

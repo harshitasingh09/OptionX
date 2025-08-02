@@ -400,6 +400,7 @@ button.btn.btn-search {
     color: #fff;
     padding: 8px;
     border-radius: 7px !important;
+    top: 11px;
     z-index: 99;
 }
 
@@ -1830,11 +1831,15 @@ a.beuget-btn {
     width: 350px;
     max-width: 350px;
     border: 0;
-    box-shadow: 1px 4px 5px #dddddd2b;
+    box-shadow: 1px 4px 5px #dddddd2b ;
     font-size: 14px;
 }
 
-
+input.form-control.rounded.topsearach {
+    max-width: 350px;
+    width: 300px;
+    border-radius: 5px !important;
+}
 
 button.btn.btn-search.seamlessbtn i {
     margin: 0;
@@ -1842,7 +1847,7 @@ button.btn.btn-search.seamlessbtn i {
 }
 
 button.btn.btn-search.seamlessbtn {
-    top: 4px;
+     top: 4px;
     right: 6px;
     border: 0;
     text-align: center;
@@ -2370,4 +2375,13 @@ li.page_item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
