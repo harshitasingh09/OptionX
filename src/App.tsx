@@ -10,6 +10,8 @@ import AllItem from './components/AllItem';
 import MainPageLayout from './Layouts/MainPageLayout';
 import WordPress from './Pages/WordPress';
 import AddCart from './components/AddCart';
+import BestSeller from './Pages/BestSeller';
+import MostSeller from './Pages/MostSeller';
 // import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
           <Route path="all-items" element={<AllItem />} />
           <Route path="wordpress" element={<WordPress/>} />
           <Route path="add-cart" element={<AddCart/>} />
+          <Route path="best-seller" element={<BestSeller/>} />
+          <Route path="most-selling" element={<MostSeller/>} />
           {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
       </Routes>

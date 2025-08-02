@@ -3,11 +3,12 @@ import React, { useEffect, useState } from 'react'
 import theme from '../assets/img/theme-img.png';
 import theme1 from '../assets/img/theme-img1.png';
 import ThemeCard from '../UI/ThemeCard';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const WordPress: React.FC = () => {
 
     const [isShowMore, setIsShowMore]=useState(false)
+    const navigate = useNavigate();
 
     useEffect(() => {
         Aos.init({
@@ -121,7 +122,7 @@ const WordPress: React.FC = () => {
                             </h2>
                         </div>
                         <div className="right-btn wow" data-wow-duration="2s" data-aos="fade-left">
-                            <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new">
+                            <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new" onClick={()=>navigate("/best-seller")}>
                                 <span> View More</span></button>
                         </div>
                     </div>
@@ -179,7 +180,7 @@ const WordPress: React.FC = () => {
                             </h2>
                         </div>
                         <div className="right-btn wow" data-wow-duration="2s" data-aos="fade-left">
-                            <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new">
+                            <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new" onClick={()=>navigate("/most-selling")}>
                                 <span> View More</span></button>
                         </div>
                     </div>
