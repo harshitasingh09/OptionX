@@ -153,16 +153,16 @@ const AddCart: React.FC = () => {
                         <span className="meta-attributes__attr-tags">
                           <a title="agency" rel="nofollow" href="">agency</a>, <a title="blog" rel="nofollow"
                             href="">blog</a>, <a title="business" rel="nofollow" href="">business</a>,
-                          <a title="corporate" rel="nofollow" href="">corporate</a>,
+                          <a title="corporate" rel="nofollow" href="">corporate</a>,<br />
                           <a title="creative" rel="nofollow" href="">creative</a>,
                           <a title="digital" rel="nofollow" href="">digital</a>,
-                          <a title="gallery" rel="nofollow" href="">gallery</a>,
+                          <a title="gallery" rel="nofollow" href="">gallery</a>,<br />
                           <a title="gradient" rel="nofollow" href="">gradient</a>,
                           <a title="modern" rel="nofollow" href="">modern</a>,
-                          <a title="portfolio" rel="nofollow" href="">portfolio</a>,
+                          <a title="portfolio" rel="nofollow" href="">portfolio</a>,<br />
                           <a title="retail" rel="nofollow" href="">retail</a>,
                           <a title="rounded" rel="nofollow" href="">rounded</a>,
-                          <a title="studio" rel="nofollow" href="">studio</a>,
+                          <a title="studio" rel="nofollow" href="">studio</a>,<br />
                           <a title="template" rel="nofollow" href="">template</a>,
                           <a title="violet" rel="nofollow" href="">violet</a>
                         </span>

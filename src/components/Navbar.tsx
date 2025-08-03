@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import ScrollSearchBar from '../UI/ScrollSearchBar';
-import { Link, NavLink } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -68,9 +68,9 @@ const Navbar: React.FC = () => {
               </a>
             </div>
             <div id="sea" className={isSticky ? "stickya" : ""}>
-              <Link to="" className="search-btn" onClick={() => setShowSearch(true) }>
+              <button className="search-btn" onClick={() => setShowSearch(true)}>
                 <i className="fa fa-search"></i>
-                </Link>
+              </button>
             </div>
            
           </div>

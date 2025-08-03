@@ -32,7 +32,7 @@ const AddToCartPopup: React.FC<AddToCartPopupProps> = ({
           <img src={logo} alt="logo" />
         </div>
         <div className="heading-top-header px-4">
-          <h4 className="pb-0 mb-0">Item added to your cart</h4>
+          <h4 className="pb-0 mb-0 text-white">Item added to your cart</h4>
         </div>
         <div className="body-cart-details p-4">
           <div className="cardt-detail d-flex justify-content-between align-items-center">

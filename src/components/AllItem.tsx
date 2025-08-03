@@ -17,7 +17,7 @@ const AllItem = () => {
             <div className="container">
                 <div className="beuget mt-2">
                     <a href="#" className="beuget-btn">Home</a>
-                    <i className="fa fa-circle"></i> WordPress
+                    <i className="fa fa-circle"></i> All Items
                 </div>
             </div>
             <div className="container-fluid pt-2 pb-5">

@@ -400,7 +400,6 @@ button.btn.btn-search {
     color: #fff;
     padding: 8px;
     border-radius: 7px !important;
-    top: 11px;
     z-index: 99;
 }
 
@@ -1602,9 +1601,9 @@ p.card-text {
 
 .three {
     /* background: linear-gradient(#b986d6, #88daa1); */
-    border: 4px solid #e4a13d !important;
-    transition: all 0.4s !important;
-    transition-timing-function: cubic-bezier(0.5, 3, 0, 1) !important;
+    border: 4px solid #e4a13d;
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(0.5, 3, 0, 1);
 }
 
 .three:hover {
@@ -1831,15 +1830,11 @@ a.beuget-btn {
     width: 350px;
     max-width: 350px;
     border: 0;
-    box-shadow: 1px 4px 5px #dddddd2b ;
+    box-shadow: 1px 4px 5px #dddddd2b;
     font-size: 14px;
 }
 
-input.form-control.rounded.topsearach {
-    max-width: 350px;
-    width: 300px;
-    border-radius: 5px !important;
-}
+
 
 button.btn.btn-search.seamlessbtn i {
     margin: 0;
@@ -1847,7 +1842,7 @@ button.btn.btn-search.seamlessbtn i {
 }
 
 button.btn.btn-search.seamlessbtn {
-     top: 4px;
+    top: 4px;
     right: 6px;
     border: 0;
     text-align: center;
@@ -2026,7 +2021,7 @@ nav.breadcrumbs i {
 .add-container {
     background: #fff;
     padding: 18px;
-    border-radius: 5px ;
+    border-radius: 5px;
 }
 
 
@@ -2122,15 +2117,19 @@ h4 {
     width: 200px;
 }
 
+.heading-top-header h4 {
+    margin-bottom: 0;
+
+}
 
 .amout-cart span {
-    color: var(--bs-primary) !important;
+    color: var(--bs-primary);
 }
 
 .heading-top-header {
     background: #000;
     text-align: center;
-    color: #fff !important;
+    color: #fff;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -2138,7 +2137,6 @@ h4 {
 .heading-top-header h4 {
     margin-bottom: 0;
     font-weight: 400;
-     color: #fff !important;
 }
 
 .cardt-detail {
@@ -2183,7 +2181,7 @@ input.form-control.rounded.h-100 {
 }
 
 button.btn.btn-search.all-listing {
-    top: 7px;
+    top: 6px;
     right: 7px;
     padding: 5px 10px;
 }
@@ -2256,11 +2254,11 @@ button.btn.btn-search.all-listing {
 }
 
 body {
-    background: #eaeaea !important;
+    background: #eaeaea;
 }
 
 .accordion-content {
-    background: #fff !important;
+    background: #fff;
     padding: 15px;
     border-radius: 5px;
 }
@@ -2354,8 +2352,8 @@ body {
 
 .btn-grid.active {
     color: #444;
-    margin: 12px;
-    border: 1px solid #8a8a8a;
+    margin: 8px;
+    border: 1px solid #c3b8b8;
     background: #fff;
     padding: 0;
     border-radius: 5px;
@@ -2368,7 +2366,7 @@ body {
 }
 
 .list-view .card>.card-img-top {
-    width: 347px;
+    width: 246px;
 }
 
 li.page_item {
@@ -2376,12 +2374,72 @@ li.page_item {
     align-items: center;
     justify-content: space-between;
 }
+.listing-wisting ul {
+    list-style: none;
+    display: flex
+;
+    gap: 6px;
+    display: none;
+    margin-top: 7px;
+    margin-right: 14px;
+    vertical-align: top;
+}
+.list-view .listing-wisting ul {
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+}
+.listing-wisting li:first-child {
+        border-right: 2px solid #a4a4a4;
+    padding: 0px 10px;
+}
+.page-link {
+    padding: 5px 17px;
+    margin: 6px 6px;
+    font-size: 11px;
+}
 
 
-.form-control:focus {
-    color: #212529;
-    background-color: #fff;
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+.active>.page-link {
+    border: 1px solid red;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+.page-link {
+       padding: 7px 15px;
+    margin: 10px 7px;
+    font-size: 14px;
+    background: no-repeat;
+    border: 1px solid #B8B8B8;
+    border-radius: 5px;
+    color: #000;
+}
+span.search-filters-category {
+    font-size: 14px;
+}
+button.btn.btn-search.all-listing:active {
+    color: #fff;
+}
+
+.bestseller-btn ul li a {
+    color: #000;
+    font-size: 13px;
+}
+.bestseller-btn ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    background: #fff;
+    padding: 1px 8px;
+    border-radius: 5px;
+}
+a.classCss {
+    color: #3b00fd ! IMPORTANT;
+
+}
+.bestseller-btn ul {
+    margin-left: 0;
+    padding: 0;
 }
