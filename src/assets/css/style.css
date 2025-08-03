@@ -2443,3 +2443,13 @@ a.classCss {
     margin-left: 0;
     padding: 0;
 }
+
+button.search-btn {
+    background: none;
+    border: 0;
+}
+
+input.form-control.rounded.topsearach {
+    max-width: 350px;
+    width: 350px;
+}
