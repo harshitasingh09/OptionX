@@ -2113,9 +2113,7 @@ h4 {
     width: 250px;
 }
 
-.w-20 {
-    width: 200px;
-}
+
 
 .heading-top-header h4 {
     margin-bottom: 0;
@@ -2183,7 +2181,7 @@ input.form-control.rounded.h-100 {
 button.btn.btn-search.all-listing {
     top: 6px;
     right: 7px;
-    padding: 5px 10px;
+    padding: 5px 10px !important;
 }
 
 .heading-fillter a {
@@ -2254,7 +2252,7 @@ button.btn.btn-search.all-listing {
 }
 
 body {
-    background: #eaeaea;
+    background: #eaeaea !important;
 }
 
 .accordion-content {
@@ -2390,7 +2388,7 @@ li.page_item {
     display: inline-flex;
 }
 .listing-wisting li:first-child {
-        border-right: 2px solid #a4a4a4;
+        border-right: 2px solid #a4a4a4 !important;
     padding: 0px 10px;
 }
 .page-link {
@@ -2401,20 +2399,20 @@ li.page_item {
 
 
 .active>.page-link {
-    border: 1px solid red;
-    background: #fff;
-    color: #000;
-    border-radius: 5px;
+    border: 1px solid red !important;
+    background: #fff !important;
+    color: #000 !important;
+    border-radius: 5px !important;
 }
 
 .page-link {
-       padding: 7px 15px;
+       padding: 7px 15px !important;
     margin: 10px 7px;
     font-size: 14px;
-    background: no-repeat;
-    border: 1px solid #B8B8B8;
+    background: no-repeat !important;
+    border: 1px solid #B8B8B8 !important;
     border-radius: 5px;
-    color: #000;
+    color: #000 !important;
 }
 span.search-filters-category {
     font-size: 14px;
@@ -2429,14 +2427,14 @@ button.btn.btn-search.all-listing:active {
 }
 .bestseller-btn ul li {
     list-style: none;
-    display: inline-block;
-    margin: 0;
-    background: #fff;
+    display: inline-block !important;
+    margin: 3px;
+    background: #fff !important;
     padding: 1px 8px;
     border-radius: 5px;
 }
 a.classCss {
-    color: #3b00fd ! IMPORTANT;
+    color: #3b00fd !important;
 
 }
 .bestseller-btn ul {
@@ -2452,4 +2450,41 @@ button.search-btn {
 input.form-control.rounded.topsearach {
     max-width: 350px;
     width: 350px;
+    border:0px;
+    border-radius: 5px !important;
 }
+
+.sortby {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.sortby .form-select {
+    border: 0;
+    font-size: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3) !important;
+    padding: 9px;
+    border-radius: 5px !important;
+}
+
+
+.gride-list {
+    display: flex;
+    gap: 5px;
+}
+
+button.btn-list {
+    border: 0px;
+    padding: 0px 16px;
+    border-radius: 5px;
+    background: transparent;
+}
+.w-20 {
+    width: 200px !important;
+}
+input.form-control.rounded.h-100 {
+    border-radius: 5px !important;
+}
+
+ 

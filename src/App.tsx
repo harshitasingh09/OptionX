@@ -12,6 +12,7 @@ import WordPress from './Pages/WordPress';
 import AddCart from './components/AddCart';
 import BestSeller from './Pages/BestSeller';
 import MostSeller from './Pages/MostSeller';
+import ThemeListing from './components/ThemeListing';
 // import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="add-cart" element={<AddCart/>} />
           <Route path="best-seller" element={<BestSeller/>} />
           <Route path="most-selling" element={<MostSeller/>} />
+          <Route path="theme-listing" element={<ThemeListing/>} />
           {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
       </Routes>
