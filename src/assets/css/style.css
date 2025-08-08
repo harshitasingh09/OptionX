@@ -2490,3 +2490,139 @@ input.form-control.rounded.h-100 {
  button.btn.btn-search {
     margin-top: 10px;
  }
+
+ 
+.cart-box {
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 8px 14px 15px 10px;
+}
+
+.cart-box span {
+    color: gray;
+    font-size: 14px;
+}
+
+.checkboxaal input {
+    height: 19px;
+    width: 20px;
+    vertical-align: sub;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+
+
+.checkbox-select {
+    display: flex;
+}
+
+.products_img {
+    display: flex;
+}
+
+.dtail-products ul li {
+    display: inline-block;
+    padding: 12px 7px;
+}
+
+.dtail-products ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.innerpro img {
+    max-width: 100%;
+    width: 130px;
+}
+.dtail-products ul li {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.checkboxaal {
+    margin: 10px 9px;
+}
+
+.products_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.innerpro {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.conent-text-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-produts ul {
+    padding: 6px 0px;
+
+    display: inline-block;
+}
+
+.price-produts ul li {
+    display: inline-block;
+}
+
+.price-produts ul li a {
+    padding: 7px 6px;
+    border: 1px solid #ddd;
+    color: #444;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.conent-text-heading {
+    max-width: 100%;
+    width: 341px;
+}
+
+.price-produts {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+}
+
+.price-produts h6 {
+    margin-bottom: 2rem;
+}
+
+.dis-count-code span {
+    color: #0EBD48;
+    font-size: 12px;
+}
+
+.apply-btn {
+    border: 0;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    padding: 3px 12px;
+    border-radius: 5px;
+}
+
+button.bt-warning {
+    background: #ffd2d4;
+    border: 0;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    padding: 2px 16px;
+    color: #b40707;
+}
+
+.dtail-products i {
+    font-size: 5px;
+    vertical-align: middle;
+}

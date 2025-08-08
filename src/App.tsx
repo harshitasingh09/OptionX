@@ -13,6 +13,7 @@ import AddCart from './components/AddCart';
 import BestSeller from './Pages/BestSeller';
 import MostSeller from './Pages/MostSeller';
 import ThemeListing from './components/ThemeListing';
+import ShoppingCart from './components/ShoppingCart';
 // import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
@@ -22,11 +23,12 @@ function App() {
         <Route element={<MainPageLayout />}>
           <Route index element={<LandingPage />} />
           <Route path="all-items" element={<AllItem />} />
-          <Route path="wordpress" element={<WordPress/>} />
-          <Route path="add-cart" element={<AddCart/>} />
-          <Route path="best-seller" element={<BestSeller/>} />
-          <Route path="most-selling" element={<MostSeller/>} />
-          <Route path="theme-listing" element={<ThemeListing/>} />
+          <Route path="wordpress" element={<WordPress />} />
+          <Route path="add-cart" element={<AddCart />} />
+          <Route path="best-seller" element={<BestSeller />} />
+          <Route path="most-selling" element={<MostSeller />} />
+          <Route path="theme-listing" element={<ThemeListing />} />
+          <Route path="shopping-cart" element={<ShoppingCart />} />
           {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
       </Routes>
