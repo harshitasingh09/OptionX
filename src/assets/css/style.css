@@ -2487,4 +2487,6 @@ input.form-control.rounded.h-100 {
     border-radius: 5px !important;
 }
 
- 
+ button.btn.btn-search {
+    margin-top: 10px;
+ }
