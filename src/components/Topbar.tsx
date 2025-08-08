@@ -20,8 +20,8 @@ const Topbar: React.FC = () => {
                 <div className="rightBar d-flex justify-content-between align-items-center gap-4">
                     <h6 className=" fw-normal m-0 colorCode">Community </h6>
                         <button className="btn btnCss-custom">Sell</button>
-                        <div className="iconBar iconArea bold" data-totalitems="4">
-                          <img src={cart} className="cartimg" alt="Shopping Cart" onClick={()=>navigate("/shopping-cart")} />
+                        <div className="iconBar iconArea bold" data-totalitems="4" onClick={()=>navigate("/shopping-cart")}>
+                          <img src={cart} className="cartimg" alt="Shopping Cart"  />
 
                         </div>
                         <button className="btn btnCss-custom">Sign In</button>
