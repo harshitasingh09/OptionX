@@ -1839,9 +1839,11 @@ a.beuget-btn {
 button.btn.btn-search.seamlessbtn i {
     margin: 0;
     padding: 4px;
+    margin-top: auto;
 }
 
 button.btn.btn-search.seamlessbtn {
+    margin-top: auto;
     top: 4px;
     right: 6px;
     border: 0;
@@ -2626,3 +2628,4 @@ button.bt-warning {
     font-size: 5px;
     vertical-align: middle;
 }
+
