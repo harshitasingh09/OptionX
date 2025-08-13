@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import logo from "../assets/img/logo.png";
+import { useNavigate } from "react-router-dom";
 
 type AddToCartPopupProps = {
   show: boolean;
@@ -13,6 +14,7 @@ const AddToCartPopup: React.FC<AddToCartPopupProps> = ({
   onClose,
   onCheckout,
 }) => {
+  const navigate = useNavigate();
   return (
 
     <>
@@ -106,6 +108,7 @@ const AddToCartPopup: React.FC<AddToCartPopupProps> = ({
           className="btn-btnCss rounded-2 border-0 three butn butn__new w-30"
           onClick={() => {
             if (onCheckout) onCheckout();
+            navigate('/checkout')
           }}
         >
           Go to Checkout

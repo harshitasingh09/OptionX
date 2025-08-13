@@ -14,6 +14,8 @@ import BestSeller from './Pages/BestSeller';
 import MostSeller from './Pages/MostSeller';
 import ThemeListing from './components/ThemeListing';
 import ShoppingCart from './components/ShoppingCart';
+import Billing from './components/Billing';
+import Development from './Pages/Development';
 // import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
           <Route path="most-selling" element={<MostSeller />} />
           <Route path="theme-listing" element={<ThemeListing />} />
           <Route path="shopping-cart" element={<ShoppingCart />} />
+          <Route path="checkout" element={<Billing />} />
+          <Route path="development" element={<Development />} />
           {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
       </Routes>

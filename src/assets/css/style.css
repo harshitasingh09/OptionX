@@ -2629,3 +2629,69 @@ button.bt-warning {
     vertical-align: middle;
 }
 
+.profile-banner-top {
+    background-image: url(../img/devlopmemt.jpg);
+    height: 131px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgtransparent {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.card.rounded-3 {
+    border: 0;
+
+}
+
+.profile-img {
+    top: -21px;
+    position: relative;
+}
+.custom-btns {
+    border-radius: 5px;
+}
+.border-btn {
+    border: 1px solid var(--bs-primary);
+    color: var(--bs-primary);
+}
+.border-btn:hover {
+     background-color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+    color: var(--white);
+}
+.card-text{color: #646464; font-size: 14px; line-height: 25px;}
+ul.list-unstyled.card-text svg {
+    padding-right: 2px;
+    margin-right: 8px;
+}
+.Collectionsbg{background: #000;}
+
+.usernamechange li svg {
+    margin-right: 8px;
+}
+.usernamechange li {
+    line-height: 36px;
+    padding-right: 13px;
+}
+.card-billing {
+    box-shadow: none;
+    border: 0;
+}
+.order-summary-item span {
+    font-size: 14px;
+}
+.order-summary-item {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 38px;
+}
+.totleCss {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
