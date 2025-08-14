@@ -1,6 +1,7 @@
 import React from 'react'
 import item from "../assets/img/374151.svg"
-import dev from "../assets/img/ffffff.svg"
+// import dev from "../assets/img/devlopmemt.jpg"
+import dev1 from "../assets/img/ffffff.svg"
 
 const Development: React.FC = () => {
     
@@ -14,7 +15,7 @@ const Development: React.FC = () => {
                  align-items-md-start justify-content-md-between ">
                 <div className="align-items-end mb-0 mb-md-0">
                     <div className="userdev align-items-end d-flex">
-                        <img src={dev} alt="Development Profile Picture"
+                        <img src={dev1} alt="Development Profile Picture"
                             className="rounded-circle profile-img me-3" />
                         <div>
                             <h1 className="fs-2 fw-bold text-dark mt-2">Development</h1>
