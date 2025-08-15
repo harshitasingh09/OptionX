@@ -16,6 +16,10 @@ import ThemeListing from './components/ThemeListing';
 import ShoppingCart from './components/ShoppingCart';
 import Billing from './components/Billing';
 import Development from './Pages/Development';
+// import FormDetails from './components/FormDetails';
+import BillingDetails from './components/BillingDetails';
+import Announcements from './components/Announcements';
+import FromDetails from './components/FromDetails';
 // import AddToCartPopup from './UI/AddToCartPopup';
 
 function App() {
@@ -33,8 +37,11 @@ function App() {
           <Route path="shopping-cart" element={<ShoppingCart />} />
           <Route path="checkout" element={<Billing />} />
           <Route path="development" element={<Development />} />
+          <Route path="form-details" element={<FromDetails />} />
+          <Route path="billing-details" element={<BillingDetails />} />
           {/* <Route path="add-cart-popup" element={<AddToCartPopup />} /> */}
         </Route>
+          <Route path="/announcements" element={<Announcements />} />
       </Routes>
     </Router>
   );

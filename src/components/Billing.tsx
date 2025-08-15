@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Billing :React.FC = () => {
+    const navigate = useNavigate()
   return (
    <>
     <main className="main-content container">
@@ -56,7 +58,7 @@ const Billing :React.FC = () => {
                                     <input type="text" className="form-control form-control-custom" id="zip" placeholder="Zip / Postal Code"/>
                                 </div>
                             </div>
-                            <button type="submit" className="btn btn-btnCss rounded-2 border-0 three butn butn__new text-end">Save and continue</button>
+                            <button type="submit" className="btn btn-btnCss rounded-2 border-0 three butn butn__new text-end" onClick={()=>navigate("/billing-details")}>Save and continue</button>
                         </form>
                     </div>
                 </div>
