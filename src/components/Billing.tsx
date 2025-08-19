@@ -1,14 +1,22 @@
-import React from 'react'
+import Aos from "aos";
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Billing :React.FC = () => {
+    
     const navigate = useNavigate()
+      useEffect(() => {
+                        Aos.init({
+                          duration: 2000,
+                        });
+                      }, []);
   return (
    <>
     <main className="main-content container">
         <div className="row g-4 mt-3 mb-3">
          
-            <div className="col-lg-7">
+            <div className="col-lg-7" data-aos="fade-left" data-wow-duration="2s"
+                            data-aos-anchor-placement="fade-left">
                 <div className="card card-billing p-4">
                     <div className="card-body">
                         <h2 className="card-title h4 fw-bold text-dark mb-4">Billing Details</h2>
@@ -65,7 +73,8 @@ const Billing :React.FC = () => {
             </div>
 
             
-            <div className="col-lg-5">
+            <div className="col-lg-5" data-aos="fade-right" data-wow-duration="2s"
+                            data-aos-anchor-placement="fade-right">
                 <div className="card card-billing card-order p-2">
                     <div className="card-body">
                         <h5 className="card-title h4 fw-bold text-dark mb-3">Order Summary</h5>

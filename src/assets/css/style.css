@@ -261,12 +261,29 @@ a {
 .btn-outline-primary:hover {
     color: var(--bs-light) !important;
 }
-
+.btn-outline-secondary {
+    color: #797672;
+    border-color: #797672;
+    border-radius: 5px;
+}
 .btn-secondary,
 .btn-outline-secondary:hover {
     color: var(--bs-dark);
+
 }
 
+.card {
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
 .btn-square {
     width: 38px;
     height: 38px;
@@ -3053,4 +3070,8 @@ a.btn.btn-danger.me-2 {
 button.btn.btn-outline-danger {
     border-radius: 5px;
   
+}
+
+button.btn.btn-search.all-listing.searbarsection {
+    top: -4px;
 }

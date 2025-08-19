@@ -25,7 +25,7 @@ const ThemeListing: React.FC = () => {
                             <div className="input-group mb-3 w-60 position-relative wow animate_animated animate_fadeInLeft"
                                 data-aos="fade-right">
                                 <input type="text" className="form-control rounded h-100" placeholder="e.g responsive CMS Theme" />
-                                <button className="btn btn-search all-listing"> <i className="fa fa-search"></i> Search</button>
+                                <button className="btn btn-search all-listing searbarsection"> <i className="fa fa-search"></i> Search</button>
                             </div>
                         </div>
                         <div className="sortby">

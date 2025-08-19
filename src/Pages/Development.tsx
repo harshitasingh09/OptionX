@@ -1,15 +1,23 @@
-import React from 'react'
+import Aos from "aos";
+import React, { useEffect } from 'react'
 import item from "../assets/img/374151.svg"
 // import dev from "../assets/img/devlopmemt.jpg"
 import dev1 from "../assets/img/ffffff.svg"
 
 const Development: React.FC = () => {
+
+     useEffect(() => {
+                    Aos.init({
+                      duration: 2000,
+                    });
+                  }, []);
     
   return (
     <>
      <main className="flex-grow-1 container px-4 py-5">
        
-        <section className=" p-4 mb-4 position-relative overflow-hidden">
+        <section className=" p-4 mb-4 position-relative overflow-hidden" data-aos="fade-left" data-wow-duration="2s"
+                            data-aos-anchor-placement="fade-left">
             <div className="profile-banner-top rounded-top"></div>
             <div className="position-relative z-1 d-flex flex-column flex-md-row align-items-start
                  align-items-md-start justify-content-md-between ">
@@ -24,8 +32,8 @@ const Development: React.FC = () => {
                     </div>
 
                     <div className="d-flex mt-3">
-                        <button className="btn btn-primary custom-btns shadow-sm me-2">View Portfolio</button>
-                        <button className="btn btn-outline-secondary border-btn rounded-lg shadow-sm">Follow</button>
+                        <button className="btn btn-btnCss rounded-2 border-0 three butn butn__new">View Portfolio</button>
+                        <button className="btn btn-outline-secondary border-btn rounded-lg">Follow</button>
                     </div>
                 </div>
                 <div className="d-flex align-items-end flex-column  mt-md-0">
@@ -60,7 +68,8 @@ const Development: React.FC = () => {
 
         <div className="row g-4">
          
-            <div className="col-lg-8">
+            <div className="col-lg-8" data-aos="fade-left" data-wow-duration="2s"
+                            data-aos-anchor-placement="fade-left">
                 <div className="d-flex flex-column h-100">
                   
                     <section className="card  mb- bgtransparent">
@@ -224,7 +233,8 @@ const Development: React.FC = () => {
             </div>
 
        
-            <div className="col-lg-4">
+            <div className="col-lg-4" data-aos="fade-right" data-wow-duration="2s"
+                            data-aos-anchor-placement="fade-right">
                 <div className="d-flex flex-column h-100">
                 
                     <section className="card  rounded-3 mb-4">
